@@ -1,0 +1,11 @@
+HANDLEBARS
+
+    - TEMPLATING LANGUAGE
+    - TEMPLATE + INPUT = OUTPUT
+        - EX: simple-template.hbs + sample-data.xml = sample-data.json
+
+
+
+================= API =================
+
+http://localhost:3000/api/convert/cda?unusedSegments=true&invalidAccess=true

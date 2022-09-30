@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro:wght@200;400&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #0f0f0f;
+    color: whitesmoke;
+}
+
+h2 {
+    margin: 0 auto;
+    height: fit-content;
+    width: fit-content;
+    border-bottom: 3px solid whitesmoke;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+}
+
+li {
+    font-size: 2rem;
+    width: 300px;
+    margin: 4px;
+    padding: 4px;
+    list-style: none;
+    color: black;
+}
+
+.midlaner, .midlaner__icon {
+    background-color: #eeeeee
+}
+
+.toplaner, .toplaner__icon {
+    background-color: #ffea00
+}
+
+.toplaner__icon, .midlaner__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.lane__type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+}
+
+.midlaner__identifier, .toplaner__identifier {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lane__type > div > p {
+    width: fit-content !important;
+}
+
+.champions__list {
+    display: flex;
+    align-items: space-evenly;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.champion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: whitesmoke;
+    width: 100%;
+    position: relative;
+}
+
+.champion__type {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+p {
+    width: fit-content;
+    color: whitesmoke;
+}
+
+.champion > p {
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.champion__types {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    width: 60%;
+}

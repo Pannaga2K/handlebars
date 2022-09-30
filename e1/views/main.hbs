@@ -1,0 +1,43 @@
+<h2>LIST OF MY MOST LOVED LEAGUE CHAMPIONS</h2>
+{{> lovedChamps}}
+
+<h2>LIST OF MY MOST HATED LEAGUE CHAMPIONS</h2>
+{{> hatedChamps}}
+
+{{#if champions}}
+    <h2>LIST OF CHAMPIONS</h2>
+    <div class="champions__list" >
+        {{#each champions}}
+            <div class="champion" >
+                <p>{{name}}</p>
+                <div class="champion__types" >
+                    {{#each this.type}}
+                        <div class="champion__type" >
+                            <p>{{this}}</p>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        {{/each}}
+    </div>
+{{/if}}
+
+{{#if suggestedChampions}}
+    <h2>LIST OF SUGGESTED CHAMPS</h2>
+    <ul>
+        {{#each suggestedChampions}}
+            <li class={{this.lane}} >{{this.name}}</li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+<div class="lane__types" >
+    <div class="midlaner__identifier" >
+        <div class="midlaner__icon" ></div>
+        <p>MIDLANER</p>
+    </div>
+    <div class="toplaner__identifier" >
+        <div class="toplaner__icon" ></div>
+        <p>TOPLANER</p>
+    </div>
+</div>
